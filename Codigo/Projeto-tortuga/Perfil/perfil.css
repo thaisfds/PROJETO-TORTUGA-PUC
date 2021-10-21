@@ -1,0 +1,53 @@
+body{background-color: rgb(217, 248, 169);}
+.perfil{border-radius: 100%;width:15%;margin-top:20px;margin:10px;}
+.cab{background-color:rgb(148, 202, 67)!important ;}
+h1{text-align:center;}
+p{text-align:center;}
+i{color:rgb(217, 248, 169);}
+
+@media screen  and (max-width:600px){.perfil{width:50%;}.seta{width:13% !important;}}
+@media screen and (max-width:1024px){.perfil{width:50%}}
+.seta{width:5%;display:inline;}
+.butao{margin:10px;background-color: #198754 !important;border-color: #198754 !important;width:50%;display: block;}
+
+.menu{float:right;background-color: rgb(60, 100, 0);padding: 20px 20px;}
+.menu li{list-style:none;;margin-right:10px;font-size:150%;align-items: center;margin: 30px;}
+ a{text-decoration: none;color: white;}
+ .mob{display:block;height: 50px;width: 50px;position:absolute;top:15px;right:15px;z-index: 999;}
+
+ /*Botão flex*/
+ #toggle:checked~ label i:nth-child(2){display: block;}
+ #toggle:checked~ label i:first-child{display:none;}
+ #toggle:not(checked)~ label i:first-child(){display: block;}
+ #toggle:not(checked)~ label i:nth-child(2){display:none;}
+ #toggle:checked~ul{display: block;}
+ #toggle:checked~ul div li a{display:block;}
+  .menu{display: flex;flex-wrap: wrap;align-items: center;width: 100%;height:100%;position: fixed;display: none;}
+  
+  @media screen and (max-width:600px) {.men1{margin-left: 20%;margin-bottom:30%;}.aba{margin-top: 40%;}}
+   i{font-size: 200%;}
+#toggle{display: none;}
+   ul div li a{display: none;}
+  
+   
+   .shadow{display: none;}
+   .teste{cursor: pointer;}
+   .teste ::before,
+   .teste::after{
+
+      content: "";
+   }
+
+   .teste ::before{
+      display:inline-block;
+      width: 2em;
+      height: 1em;
+      background-color: #900;
+   }
+
+
+/* Inserir imagem */
+#file{
+    display: none;
+}
+

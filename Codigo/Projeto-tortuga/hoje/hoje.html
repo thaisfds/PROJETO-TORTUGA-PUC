@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <link rel="stylesheet" href="/Codigo/Projeto-tortuga/hoje/hoje.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista do que fazer</title>
+    
+
+    </style>
+</head>
+<body>
+    <nav class="cab" id="te">
+        <a href="/Codigo/Projeto-tortuga/Perfil/perfil.html"><img class="perfil" src="/Codigo/Projeto-tortuga/Img/perfil.png"></a>
+        <center><div id="data-hora"></div></center>
+            <script>
+                // Função para formatar 1 em 01
+                const zeroFill = n => {
+                    return ('0' + n).slice(-2);
+                }
+    
+                // Cria intervalo
+                const interval = setInterval(() => {
+                    // Pega o horário atual
+                    const now = new Date();
+    
+                    // Formata a data conforme dd/mm/aaaa hh:ii:ss
+                    const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+    
+                    // Exibe na tela usando a div#data-hora
+                    document.getElementById('data-hora').innerHTML = dataHora;
+                }, 1000);
+            </script>
+            
+
+
+
+
+    
+    <div class="content">
+        <div class="row">
+
+            <div class="col-12">
+                <center><h1>O que você tem pra hoje?</h1></center>
+                <form>
+                    <input type="text" name="dia" id="panda" placeholder="Nova Atividade...">
+                    <input type="button" value="AddTarefa" id="adicionar" onclick="addTarefa();"/>
+                <p>Minhas Atividades</p>
+
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                    <div class="lista">
+                        <ul id="minhaLista">
+                            
+                           
+                            
+                        </ul>
+
+
+                    </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <script src="/Codigo/Projeto-tortuga/hoje/hoje.js"></script>
+</body>
+</html>

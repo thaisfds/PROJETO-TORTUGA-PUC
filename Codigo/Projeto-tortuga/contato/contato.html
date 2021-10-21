@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="contato.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <script src="https://kit.fontawesome.com/65ffea1113.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+
+    <nav id="te" class="cab">
+        <a href="../Pagina inicial/tp.html"><img class="perfil" src="../Img/Seta.png"></a>
+        <center class="t">
+            <h2>Entre em contato</h2>
+        </center>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="mob">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times-circle"></i>
+        </label>
+
+        <ul id="mn" class="menu">
+
+
+            <center class="aba">
+                <li><a href="/Codigo/Projeto-tortuga/Perfil/perfil.html">Perfil</a></li>
+                <li><a href="/Codigo/Projeto-tortuga/Agenda/Agenda.html">Agenda</a></li>
+                <li><a href="/Codigo/Projeto-tortuga/Notificações/Noti.html">Notificações</a></li>
+                <li><a href="/Codigo/Projeto-tortuga/contato/contato.html">Contato</a></li>
+                <li><a href="/Codigo/Projeto-tortuga/Tela inicial/Tela1.html">Desconectar</a></li>
+                <li> <input type="checkbox" id="shadow"></li>
+            </center>
+
+        </ul>
+
+    </nav>
+
+    <section class="sessao-contato">
+        <form name="formteste" action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="accessKey" value="893d0af8-62dd-4502-806a-190be781bbd9">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/Codigo/Projeto-tortuga/contato/contato.html">   
+
+            <h2>Contato</h2>
+
+            <p class="nome">
+                <input type="text" name="name" placeholder="Informe seu nome" required="required">
+            </p>
+
+            <p class="email">
+                <input type="email" name="email" placeholder="Informe seu e-mail" required="required">
+            </p>
+
+            <p class="assunto">
+                <input type="text" name="subject" placeholder="Informe o assunto" required="required">
+            </p>
+
+            <p class="mensagem">
+                <textarea name="message" placeholder="Deixe sua mensagem"></textarea>
+            </p>
+
+            <p class="enviar">
+                <input type="submit" name="enviar" value="Enviar">
+            </p>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

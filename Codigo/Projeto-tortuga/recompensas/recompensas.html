@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recompensas</title>
+    <link rel="stylesheet" href="/Codigo/Projeto-tortuga/Pagina inicial/tp.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="recompensas.js"></script>
+</head>
+<body id="body"><nav class="cab" id="te">
+    <a href="/Codigo/Projeto-tortuga/Perfil/perfil.html"><img class="perfil" src="/Codigo/Projeto-tortuga/Img/perfil.png"></a>
+    <center><div id="data-hora"></div></center>
+		<script>
+			// Função para formatar 1 em 01
+			const zeroFill = n => {
+				return ('0' + n).slice(-2);
+			}
+
+			// Cria intervalo
+			const interval = setInterval(() => {
+				// Pega o horário atual
+				const now = new Date();
+
+				// Formata a data conforme dd/mm/aaaa hh:ii:ss
+				const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+				// Exibe na tela usando a div#data-hora
+				document.getElementById('data-hora').innerHTML = dataHora;
+			}, 1000);
+		</script>
+        </header>
+		<main style="background-color:rgb(217,248,169,255);">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+<section class="our-webcoderskull padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+        <h2>Principais recomendações</h2>
+    </div>
+    <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="/Codigo/Projeto-tortuga/Img/alamy1.jpg" class="img-responsive" alt=""></figure>
+            <h3><a href="https://g1.globo.com/bemestar/viva-voce/noticia/2020/10/04/a-tecnica-de-hemingway-para-vencer-a-procrastinacao.ghtml">A técnica de Hemingway para vencer a procrastinação</a></h3>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="/Codigo/Projeto-tortuga/Img/adiado-conceito-em-design-plano_23-2148498596.jpg" class="img-responsive" alt=""></figure>
+            <h3><a href="https://g1.globo.com/fantastico/noticia/2019/12/29/especialista-explica-que-o-ato-de-adiar-decisoes-tem-solucao-entenda-a-procrastinacao.ghtml">Especialista explica que o ato de "adiar" decisões tem solução; entenda a procrastinação</a></h3>
+
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="/Codigo/Projeto-tortuga/Img/christian-erfurt-1131100-unsplash.jpg" class="img-responsive" alt=""></figure>
+            <h3><a href="https://g1.globo.com/ciencia-e-saude/viva-voce/noticia/2019/07/13/cinco-dicas-para-evitar-a-procrastinacao.ghtml">Cinco dicas para evitar a procrastinação</a></h3>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+       </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="/Codigo/Projeto-tortuga/Img/dicas-truques-para-procrastinacao.png" class="img-responsive" alt=""></figure>
+            <h3><a href="https://g1.globo.com/economia/educacao-financeira/blog/samy-dana/post/2018/08/26/por-que-procrastinamos.ghtml">Por que procrastinamos?</a></h3>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<center style="color:black">Clique em uma das bolinhas para exibição dos livros</center>
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <a href="https://www.amazon.com.br/fim-procrastina%C3%A7%C3%A3o-Petr-Ludwig/dp/8543109353/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=procrastina%C3%A7%C3%A3o&qid=1623679627&sr=8-1"><img src="/Codigo/Projeto-tortuga/Img/412csRAwJfL._SY491_BO1,204,203,200_.jpg" style="width:100%; height: 1000px;"></a>
+	  <div class="text">Livro O fim da procrastinação</div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <a href="https://www.amazon.com.br/PROCRASTINA%C3%87%C3%83O-cient%C3%ADfico-sobre-procrastinar-definitivamente-ebook/dp/B075JMXJLH/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=procrastina%C3%A7%C3%A3o&qid=1623679627&sr=8-2"><img src="/Codigo/Projeto-tortuga/Img/41cWJnvAy7L.jpg" style="width:100%; height: 1000px;"></a>
+	  <div class="text">Livro PROCRASTINAÇÃO: Guia científico</div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <a href="https://www.amazon.com.br/arte-procrastina%C3%A7%C3%A3o-John-Perry/dp/8565530671/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=procrastina%C3%A7%C3%A3o&qid=1623679627&sr=8-3"><img src="/Codigo/Projeto-tortuga/Img/51dnepwjcdL._SX351_BO1,204,203,200_.jpg" style="width:100%; height: 1000px;"></a>
+	  <div class="text">A arte da procrastinação</div>
+	</div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <section class="our-webcoderskull padding-lg">
+	<div class="container">
+	  <div class="row heading heading-icon">
+		  <h2>Vídeos da semana</h2>
+	  </div>
+	  <ul class="row">
+		<li class="col-12 col-md-6 col-lg-3">
+			<div class="cnt-block equal-hight" style="height: 349px;">
+				<iframe width="200" height="200" src="https://www.youtube.com/embed/CkMAE5Jav20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  <h3><a href="https://www.youtube.com/watch?v=CkMAE5Jav20&t=69s">Conheça as 4 CAUSAS REAIS da PROCRASTINAÇÃO</a></h3>
+			  <ul class="follow-us clearfix">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			  </ul>
+			</div>
+		</li>
+		<li class="col-12 col-md-6 col-lg-3">
+			<div class="cnt-block equal-hight" style="height: 349px;">
+				<iframe width="200" height="200" src="https://www.youtube.com/embed/dQ1rQ8Hk9Nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  <h3><a href="https://www.youtube.com/watch?v=dQ1rQ8Hk9Nc">Música, ideal para estudar e manter a mente calma</a></h3>
+  
+			  <ul class="follow-us clearfix">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			  </ul>
+			</div>
+		</li>
+		<li class="col-12 col-md-6 col-lg-3">
+			<div class="cnt-block equal-hight" style="height: 349px;">
+				<iframe width="200" height="200" src="https://www.youtube.com/embed/Mivz8Qh-DwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  <h3><a href="https://www.youtube.com/watch?v=Mivz8Qh-DwI">PROCRASTINAÇÃO por Minutos Psiquícos</a></h3>
+			  <ul class="follow-us clearfix">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			  </ul>
+			</div>
+		 </li>
+		<li class="col-12 col-md-6 col-lg-3">
+			<div class="cnt-block equal-hight" style="height: 349px;">
+				<iframe width="200" height="200" src="https://www.youtube.com/embed/f-2xDg1AblE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  <h3><a href="https://www.youtube.com/watch?v=f-2xDg1AblE">Procrastinação pode ser doença? - Correspondente Médico</a></h3>
+			  <ul class="follow-us clearfix">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			  </ul>
+			</div>
+		</li>
+	  </ul>
+	</div>
+  </section>
+		</main>
+		<footer>
+			<section class="newsletter">
+				<div class="container">
+				<div class="row">
+				<div class="col-sm-12">
+					<div class="content">
+						<h2>SE INSCREVA NO NOSSO NOTICIÁRIO</h2>
+					<div class="input-group">
+						 <input type="email" class="form-control" placeholder="Entre com seu e-mail">
+						 <span class="input-group-btn">
+						 <button class="btn" type="submit">Enviar</button>
+						 </span>
+						  </div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</section>
+			</footer>
+</body>
+</html>
